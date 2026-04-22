@@ -1,0 +1,16 @@
+services:
+  claude-safeway:
+    image: node:20-alpine
+    container_name: claude-safeway
+    restart: unless-stopped
+    working_dir: /app
+    volumes:
+      - .:/app
+      - /app/node_modules
+    environment:
+      - SAFEWAY_EMAIL=${SAFEWAY_EMAIL}
+      - SAFEWAY_PASSWORD=${SAFEWAY_PASSWORD}
+      - SAFEWAY_STORE_ID=${SAFEWAY_STORE_ID:-}
+      - PORT=${PORT:-8773}
+    command: node src/serve.js
+    network_mode: host
