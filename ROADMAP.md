@@ -27,3 +27,6 @@
 - [ ] `clip_coupon` tool — clip a J4U digital coupon
 - [ ] Store the storeId preference per-session rather than requiring env var every time
 - [ ] Rate limiting / retry logic for 429 responses
+
+## 🚫 Blocked
+- ❌ [docker-monitor:container-stopped] Container `claude-safeway` is not running on the NAS — check `docker logs claude-safeway` and restart — 2026-04-23 05:08 UTC
