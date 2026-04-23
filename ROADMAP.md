@@ -29,6 +29,6 @@
 - [ ] Rate limiting / retry logic for 429 responses
 
 ## 🚫 Blocked
-- ❌ [docker-monitor:container-stopped] Container `claude-safeway` is not running on the NAS — check `docker logs claude-safeway` and restart — 2026-04-23 08:42 UTC
+
 - ❌ [docker-monitor:no-ghcr-image] Container `claude-safeway` uses `node:20-alpine` — migrate to `ghcr.io/aldarondo/...` with a GitHub Actions build-push workflow — 2026-04-23 08:00 UTC
 
