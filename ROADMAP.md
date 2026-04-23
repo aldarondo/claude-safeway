@@ -29,4 +29,5 @@
 - [ ] Rate limiting / retry logic for 429 responses
 
 ## 🚫 Blocked
+- ❌ [docker-monitor:no-ghcr-image] Container `claude-safeway` uses `node:20-alpine` — migrate to `ghcr.io/aldarondo/...` with a GitHub Actions build-push workflow — 2026-04-23 08:00 UTC
 
