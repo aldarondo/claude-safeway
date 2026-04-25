@@ -9,7 +9,7 @@ services:
       - SAFEWAY_STORE_ID=${SAFEWAY_STORE_ID:-}
       - PORT=${PORT:-8773}
     volumes:
-      - ./logs:/app/logs
+      - /volume1/docker/claude-safeway/logs:/app/logs
     network_mode: host
     logging:
       driver: "json-file"
