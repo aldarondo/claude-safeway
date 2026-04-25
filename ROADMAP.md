@@ -18,8 +18,8 @@
 ## Backlog
 
 ### Build & Infrastructure
-- [ ] `[Code]` Add GHCR build-push workflow — migrate container from `node:20-alpine` to a versioned GHCR image (`ghcr.io/aldarondo/...`) with GitHub Actions auto-deploy
-- [ ] `[Code]` Add weekly scheduled rebuild — GitHub Actions `schedule: cron` to repull and push a fresh image every week, picking up base-image security patches
+- [x] `[Code]` 2026-04-23 — Add GHCR build-push workflow — migrate container from `node:20-alpine` to a versioned GHCR image (`ghcr.io/aldarondo/...`) with GitHub Actions auto-deploy
+- [x] `[Code]` 2026-04-23 — Add weekly scheduled rebuild — GitHub Actions `schedule: cron` to repull and push a fresh image every week, picking up base-image security patches
 
 - [ ] Verify actual API response shapes (may need tweaks after first live test)
 - [ ] `view_cart` tool — GET current cart contents
@@ -27,6 +27,9 @@
 - [ ] `clip_coupon` tool — clip a J4U digital coupon
 - [ ] Store the storeId preference per-session rather than requiring env var every time
 - [ ] Rate limiting / retry logic for 429 responses
+
+## ✅ Completed
+- [2026-04-23] GHCR build-push workflow and weekly scheduled rebuild added to `.github/workflows/build.yml`; Dockerfile on `node:22-alpine`
 
 ## 🚫 Blocked
 - ❌ [docker-monitor:deploy-failed] GitHub Actions deploy failed (run #24920106414) — https://github.com/aldarondo/claude-safeway/actions/runs/24920106414 — 2026-04-25 08:00 UTC
