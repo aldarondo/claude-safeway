@@ -3,6 +3,7 @@
  * Listens on PORT (default 8773) for SSE connections.
  */
 
+import './logger.js';
 import express from 'express';
 import { SSEServerTransport } from '@modelcontextprotocol/sdk/server/sse.js';
 import { createServer } from './server.js';
