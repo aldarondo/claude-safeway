@@ -8,6 +8,9 @@ services:
       - SAFEWAY_PASSWORD=${SAFEWAY_PASSWORD}
       - SAFEWAY_STORE_ID=${SAFEWAY_STORE_ID:-}
       - PORT=${PORT:-8773}
+    volumes:
+      - ./logs:/app/logs
+    command: sh -c "node src/serve.js 2>&1 | tee -a /app/logs/app.log"
     network_mode: host
     logging:
       driver: "json-file"
